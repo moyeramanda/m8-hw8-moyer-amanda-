@@ -39,7 +39,7 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
-  transition: color 0.5 ease, transofrm 0.5ease;
+  transition: color 0.5 ease, transform 0.5ease;
 }
 
 header a:hover{
@@ -114,10 +114,11 @@ section.hero > button {
   text-transform: uppercase;
   cursor: pointer;
   animation-name: button-color;
-  animation-duration: 4s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
-section.hero > button:button-color{
+@keyframes button-color {
   from {background-color: var(--secondary-color);}
   to {background-color: yellow;}
 }
